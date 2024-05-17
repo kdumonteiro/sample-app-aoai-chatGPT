@@ -770,7 +770,7 @@ const Chat = () => {
                     <div className={styles.chatMessageGpt}>
                       <Answer
                         answer={{
-                          answer: 'Generating answer...',
+                          answer: 'Gerando resposta...',
                           citations: []
                         }}
                         onCitationClicked={() => null}
@@ -855,7 +855,7 @@ const Chat = () => {
                       : newChat
                   }
                   disabled={disabledButton()}
-                  aria-label="clear chat button"
+                  aria-label="Limpar conversa"
                 />
                 <Dialog
                   hidden={hideErrorDialog}
@@ -865,7 +865,7 @@ const Chat = () => {
               </Stack>
               <QuestionInput
                 clearOnSend
-                placeholder="Type a new question..."
+                placeholder="Faça uma pergunta..."
                 disabled={isLoading}
                 onSend={(question, id) => {
                   appStateContext?.state.isCosmosDBAvailable?.cosmosDB
